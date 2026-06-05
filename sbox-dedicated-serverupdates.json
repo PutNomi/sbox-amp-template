@@ -8,10 +8,10 @@
     "SkipOnFailure": false
   },
   {
-    "UpdateStageName": "Make Linux server executable",
+    "UpdateStageName": "Fix sbox-server.sh line endings",
     "UpdateSourcePlatform": "Linux",
     "UpdateSource": "SetExecutableFlag",
-    "UpdateSourceArgs": "{{$FullBaseDir}}sbox-server.dll",
+    "UpdateSourceArgs": "{{$FullBaseDir}}sbox-server.sh",
     "SkipOnFailure": true
   }
 ]
