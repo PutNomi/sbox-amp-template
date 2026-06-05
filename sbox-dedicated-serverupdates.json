@@ -4,21 +4,14 @@
     "UpdateSourcePlatform": "All",
     "UpdateSource": "SteamCMD",
     "UpdateSourceData": "1892930",
-    "UpdateSourceArgs": "590830",
+    "UpdateSourceArgs": "",
     "SkipOnFailure": false
   },
   {
-    "UpdateStageName": "Make Linux launcher executable",
+    "UpdateStageName": "Make Linux server executable",
     "UpdateSourcePlatform": "Linux",
     "UpdateSource": "SetExecutableFlag",
-    "UpdateSourceArgs": "{{$FullBaseDir}}sbox-server.sh",
-    "SkipOnFailure": true
-  },
-  {
-    "UpdateStageName": "Make Linux apphost executable",
-    "UpdateSourcePlatform": "Linux",
-    "UpdateSource": "SetExecutableFlag",
-    "UpdateSourceArgs": "{{$FullBaseDir}}sbox-server.exe",
+    "UpdateSourceArgs": "{{$FullBaseDir}}sbox-server",
     "SkipOnFailure": true
   }
 ]
