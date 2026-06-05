@@ -2,10 +2,11 @@
   "id": "36704d5e-7238-4169-91bb-2fb1736465ca",
   "authors": [
     "Hydrocut",
-    "TeamKit"
+    "TeamKit",
+    "PutNomi"
   ],
-  "origin": "https://github.com/hydrocut/sbox-amp-template.git",
-  "url": "https://github.com/hydrocut/sbox-amp-template",
+  "origin": "https://github.com/PutNomi/sbox-amp-template.git",
+  "url": "https://github.com/PutNomi/sbox-amp-template",
   "imagefile": "",
   "prefix": "TeamKit",
   "repotype": "AppTemplates"
