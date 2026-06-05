@@ -11,7 +11,7 @@
     "UpdateStageName": "Make Linux server executable",
     "UpdateSourcePlatform": "Linux",
     "UpdateSource": "SetExecutableFlag",
-    "UpdateSourceArgs": "{{$FullBaseDir}}sbox-server",
+    "UpdateSourceArgs": "{{$FullBaseDir}}sbox-server.exe",
     "SkipOnFailure": true
   }
 ]
