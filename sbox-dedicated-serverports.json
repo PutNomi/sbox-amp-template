@@ -3,14 +3,14 @@
     "Protocol": "UDP",
     "Port": "27015",
     "Name": "Game Port",
-    "Description": "Port UDP principal utilisé par le serveur s&box (+port).",
+    "Description": "Primary UDP port used by the s&box server (+port).",
     "Ref": "GamePort"
   },
   {
     "Protocol": "UDP",
     "Port": "27016",
     "Name": "Steam Query Port",
-    "Description": "Port UDP utilisé pour interroger les informations du serveur (+net_query_port).",
+    "Description": "UDP port used to query server information (+net_query_port).",
     "Ref": "SteamQueryPort"
   }
 ]

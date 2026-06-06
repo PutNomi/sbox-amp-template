@@ -8,10 +8,45 @@
     "SkipOnFailure": false
   },
   {
-    "UpdateStageName": "Fix sbox-server.sh line endings",
+    "UpdateStageName": "Download sbox-server.sh (Linux, LF)",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "FetchURL",
+    "UpdateSourceData": "https://raw.githubusercontent.com/PutNomi/sbox-amp-template/main/sbox-server.sh",
+    "UpdateSourceArgs": "sbox-server.sh",
+    "UpdateSourceTarget": "{{$FullBaseDir}}",
+    "OverwriteExistingFiles": true,
+    "SkipOnFailure": false
+  },
+  {
+    "UpdateStageName": "Download linux-setup.sh",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "FetchURL",
+    "UpdateSourceData": "https://raw.githubusercontent.com/PutNomi/sbox-amp-template/main/linux-setup.sh",
+    "UpdateSourceArgs": "linux-setup.sh",
+    "UpdateSourceTarget": "{{$FullBaseDir}}",
+    "OverwriteExistingFiles": true,
+    "SkipOnFailure": false
+  },
+  {
+    "UpdateStageName": "Mark scripts executable",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "SetExecutableFlag",
+    "UpdateSourceArgs": "{{$FullBaseDir}}linux-setup.sh",
+    "SkipOnFailure": false
+  },
+  {
+    "UpdateStageName": "Run Linux setup (dotnet + .so symlinks)",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "Executable",
+    "UpdateSourceData": "/bin/bash",
+    "UpdateSourceArgs": "{{$FullBaseDir}}linux-setup.sh {{$FullBaseDir}}",
+    "SkipOnFailure": false
+  },
+  {
+    "UpdateStageName": "Mark sbox-server.sh executable",
     "UpdateSourcePlatform": "Linux",
     "UpdateSource": "SetExecutableFlag",
     "UpdateSourceArgs": "{{$FullBaseDir}}sbox-server.sh",
-    "SkipOnFailure": true
+    "SkipOnFailure": false
   }
 ]
