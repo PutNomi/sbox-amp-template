@@ -27,7 +27,7 @@ Click **Fetch Latest**, then go back to create a new instance using **S&Box Dedi
 
 ### 2. Run Update
 
-If try run update will probaly get *```This task could not be completed: Performing Upgrade - For instance YOUR_INSTANCE - State: 3.```* or *```ERROR! Failed to install app '1892930' (Missing configuration)```* just try **start server again** not the update
+If try run update will probaly get *```This task could not be completed: Performing Upgrade - For instance YOUR_INSTANCE - State: 3.```* or *```ERROR! Failed to install app '1892930' (Missing configuration)```* just try **start server again** (not the update button)
 
 
 When running, setup will automatically:
